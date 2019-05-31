@@ -12,9 +12,12 @@
 */
 
 Route::get('/', function () {
-    return 'welcome';
+    return view('welcome');
 });
 Route::get('/test','Bago\index@index');
 Route::get('Users',function(){
     return view('Users');
+});
+Route::get('posts', function(){
+    return view('internal.posts');
 });
