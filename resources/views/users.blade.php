@@ -18,13 +18,13 @@
         <a class="nav-link" href="homepage.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="heroProfile.php">Profile</a>
+        <a class="nav-link" href="heroProfile.php">Users</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="heroRankings.php">Rankings</a>
+        <a class="nav-link" href="heroRankings.php">Posts</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="tasks.php">Task</a>
+        <a class="nav-link" href="tasks.php">Tasks</a>
       </li>
   </div>
   
