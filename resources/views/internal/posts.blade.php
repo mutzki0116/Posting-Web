@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,37 +7,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>First Composer Project in our OJT</title> 
+    <title>Job Posting</title> 
 </head>
-<body>  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="homepage.php"><img src="_images/ha-logo.png" width="40" height="40" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Users">Users</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="posts">Posts</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="tasks.php">Tasks</a>
-      </li>
-  </div>
-  
-  <form method="post" action="#">
-    <input type="submit" name="logout" value="Logout" class="btn btn-outline-secondary">
-  </form>
-  </nav>
-    <div>
-        <table>
-            <th>Post Timeline</th>
-        </table>
+<body>  
+@include('header')
+<div class="container pt-4">  
+    <form method="post" >
+          <div>
+            <h1>Job Posts</h1><hr>
+          </div>	
+      <div class="taskContainer table-responsive">
+          <div>
+            <a href="newpost" class="btn btn-primary col-sm ">Add new Job Post</a><br>
+          </div>
+            <table class="table table-light table-bordered table-striped">
+              <tr  class="bg-light">
+                <th><h4>Job Title</h4></th>
+                <th><h4>Job Description</h4></th>
+                <th><h4>Address</h4></th>
+                <th><h4>Action</h4></th>
+              </tr>  
+              @foreach($jobposts as $jobpost)
+              <tr>
+                <td>{{ $jobpost->job_title }}</td>
+                <td>{{ $jobpost->job_description }}</td>
+                <td>{{ $jobpost->job_address }}</td>
+                <td>
+                   <a href="editjobpost/{{ $jobpost->id }}" class="btn btn-success col-sm-5" >Edit</a>
+                   <a href="deletejobpost/{{ $jobpost->id }}" class="btn btn-danger col-sm-5" >Delete</a><br>
+                </td>           
+              </tr>
+              @endforeach
+            </table>
+      </div>
+    </form>    
     </div>
-</body>
+  </body>
 </html>

@@ -1,3 +1,5 @@
+@section('title','Users')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,36 +8,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>First Composer Project in our OJT</title> 
+    <title>@yield('title')</title> 
 </head>
-<body>  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-    <a class="navbar-brand" href="homepage.php"><img src="_images/ha-logo.png" width="40" height="40" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Users">Users</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="posts">Posts</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="tasks.php">Tasks</a>
-      </li>
-  </div>
-  <form>
-    <span class="glyphicon glyphicon-log-out"><input type="submit" name="logout" value="Logout" class="btn btn-dark"></span>
-  </form>
-  </nav>
-    <div>
-        <table>
-            <th>Users Table</th>
-        </table>
+<body> 
+@include('header')
+    <div class="container pt-4">
+        
+      <div class="taskContainer table-responsive">
+          <div>
+            <a href="newpost" class="btn btn-primary col-sm ">Add new User</a><br>
+          </div>
+            <table class="table table-light table-bordered table-striped">
+              <tr  class="bg-light">
+                <th><h4>Name</h4></th>
+                <th><h4>Role</h4></th>
+                <th><h4>Address</h4></th>
+                <th><h4>Action</h4></th>
+              </tr>  
+            </table>
+      </div>
     </div>
 </body>
 </html>

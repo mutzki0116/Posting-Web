@@ -10,4 +10,5 @@ class index extends Controller
     public function index(){
         return 'sample'; 
     }
+  
 }
