@@ -9,10 +9,10 @@
         <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="Users">Users</a>
+        <a class="nav-link" href="/users">Users</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="posts">Posts</a>
+        <a class="nav-link" href="/posts">Posts</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Tasks</a>

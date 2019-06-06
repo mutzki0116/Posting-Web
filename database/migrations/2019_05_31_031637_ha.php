@@ -14,11 +14,10 @@ class Ha extends Migration
     public function up()
     {
         Schema::create('new_tbl', function (Blueprint $table){
-            $table->integer('user_id');
+            $table->integer('id');
             $table->string('username');
             $table->string('password');
             $table->string('role');
-            $table->string('status');
             $table->timestamps();
             $table->softDeletes();  
            });
@@ -27,6 +26,14 @@ class Ha extends Migration
             $table->string('job_title');
             $table->string('job_description');
             $table->string('job_address');
+            $table->timestamps();
+            $table->softDeletes();  
+           });
+           Schema::create('accounts', function (Blueprint $table){
+            $table->integer('id');
+            $table->string('username');
+            $table->string('password');
+            $table->string('role');
             $table->timestamps();
             $table->softDeletes();  
            });

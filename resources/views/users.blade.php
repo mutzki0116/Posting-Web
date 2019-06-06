@@ -20,11 +20,17 @@
           </div>
             <table class="table table-light table-bordered table-striped">
               <tr  class="bg-light">
-                <th><h4>Name</h4></th>
+                <th><h4>ID</h4></th>
+                <th><h4>Username</h4></th>
                 <th><h4>Role</h4></th>
-                <th><h4>Address</h4></th>
-                <th><h4>Action</h4></th>
-              </tr>  
+              </tr>
+              @foreach($user as $use)
+                <tr>
+                  <td>{{ $use->id }}</td>
+                  <td>{{ $use->username }}</td>
+                  <td>{{ $use->role }}</td>
+                </tr>
+              @endforeach  
             </table>
       </div>
     </div>

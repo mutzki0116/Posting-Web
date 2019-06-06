@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/test','Bago\index@index');
-Route::get('Users',function(){
-    return view('Users');
-});
+Route::get('users','AccountsController@showList');
 Route::get('posts', 'JobPostsController@list');
 Route::post('newpost', 'JobPostsController@store');
 Route::get('newpost', function(){
