@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::get('/test','Bago\index@index');
 Route::get('users','AccountsController@showList');
 Route::get('posts', 'JobPostsController@list');
