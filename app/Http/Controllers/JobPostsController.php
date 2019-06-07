@@ -9,7 +9,7 @@ class JobPostsController extends Controller
 {
     public function list(){
 
-        $jobposts = JobPost::paginate(10);
+        $jobposts = JobPost::all()->paginate(10);
         return view('internal.posts',[
             'jobposts' => $jobposts,
             ]);
