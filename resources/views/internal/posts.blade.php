@@ -45,6 +45,11 @@
                 </td>           
               </tr>
               @endforeach
+              <div class="row">
+                <div class="col-12 text-center">
+                  {{ $jobpost->links() }}
+                </div>
+              </div>
             </table>
       </div>
     </form>    
