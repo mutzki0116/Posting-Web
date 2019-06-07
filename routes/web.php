@@ -22,3 +22,7 @@ Route::get('editjobpost/{jobpost}','JobPostsController@show');
 Route::patch('editjobpost/{jobpost}','JobPostsController@update');
 Route::get('deletejobpost/{jobpost}','JobPostsController@show2');
 Route::delete('deletejobpost/{jobpost}','JobPostsController@destroy');
+
+Route::get('/', function(){
+    return 'home';
+});
