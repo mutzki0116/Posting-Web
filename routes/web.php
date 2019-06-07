@@ -13,7 +13,7 @@
 
 Route::get('/test','Bago\index@index');
 Route::get('users','AccountsController@showList');
-Route::get('posts', 'JobPostsController@list');
+Route::get('news', 'JobPostsController@list');
 Route::post('newpost', 'JobPostsController@store');
 Route::get('newpost', function(){
     return view('newpost');

@@ -7,24 +7,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Job Posting</title> 
+    <title>News Posting</title> 
 </head>
 <body>  
 @include('header')
 <div class="container pt-4">  
     <form method="post" >
           <div>
-            <h1>Job Posts</h1><hr>
+            <h1 class="">New Timeline 
+              <a href="newpost" class="btn btn-primary col-sm-4 mr-0">Add Another News</a><br>
+            </h1>
+            <hr>
           </div>	
+          
       <div class="taskContainer table-responsive">
-          <div>
-            <a href="newpost" class="btn btn-primary col-sm ">Add new Job Post</a><br>
-          </div>
+          
             <table class="table table-light table-bordered table-striped">
               <tr  class="bg-light">
-                <th><h4>Job Title</h4></th>
-                <th><h4>Job Description</h4></th>
-                <th><h4>Address</h4></th>
+                <th><h4>News Title</h4></th>
+                <th><h4>News Description</h4></th>
+                <th><h4>News Author</h4></th>
                 <th><h4>Action</h4></th>
               </tr>  
               @foreach($jobposts as $jobpost)
