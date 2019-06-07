@@ -4,6 +4,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/app.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,7 +16,7 @@
     <form method="post" >
           <div>
             <h1 class="border-right">News Timeline <span class="border border-primary"></span>
-              <a href="newpost" class="btn btn-primary btn-lg mx-4 bg-secondary">Add Another News</a><br>
+              <a href="newpost" class="btn btn-primary btn-lg mx-4 bg-primary">Add Another News<span class="glyphicon glyphicon-plus-sign"></a><br>
             </h1>
             <hr>
           </div>	

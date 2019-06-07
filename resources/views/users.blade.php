@@ -13,11 +13,12 @@
 <body> 
 @include('header')
     <div class="container pt-4">
-        
+      <div>
+        <h1 class="border-right">Users<span class="border border-primary"></span>
+          <a href="newpost" class="btn btn-primary btn-lg mx-2 bg-primary">Add Another User</a><br>
+        </h1><hr>
+      </div>	
       <div class="taskContainer table-responsive">
-          <div>
-            <a href="newpost" class="btn btn-primary col-sm ">Add new User</a><br>
-          </div>
             <table class="table table-light table-bordered table-striped">
               <tr  class="bg-light">
                 <th><h4>ID</h4></th>

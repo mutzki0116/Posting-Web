@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>News Posting</title> 
+    <title>News Timeline</title> 
 </head>
 <body>  
 @include('headerUserside')
@@ -24,7 +24,6 @@
                 <th><h3>News Title</h3></th>
                 <th><h3>News Description</h3></th>
                 <th><h3>News Author</h3></th>
-                <th colspan="2"><h3>Action</h3></th>
               </tr>  
               @foreach($jobposts as $jobpost)
               <tr>

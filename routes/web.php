@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('test', 'Bago\index@index');
 Route::get('news', 'JobPostsController@list');
 Route::get('users','AccountsController@showList');
 Route::post('newpost', 'JobPostsController@store');
