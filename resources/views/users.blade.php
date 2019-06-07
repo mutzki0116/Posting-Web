@@ -14,9 +14,7 @@
 @include('header')
     <div class="container pt-4">
       <div>
-        <h1 class="border-right">Users<span class="border border-primary"></span>
-          <a href="newpost" class="btn btn-primary btn-lg mx-2 bg-primary">Add Another User</a><br>
-        </h1><hr>
+        <h1>Users</h1><hr>
       </div>	
       <div class="taskContainer table-responsive">
             <table class="table table-light table-bordered table-striped">

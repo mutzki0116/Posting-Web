@@ -10,13 +10,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row"> 
-            <div class="text-center mt-4">
-                <h1>BCP @NEWSLINK</h1>
-                <a href="/news" class="inline-text">BCP @NEWSLINK<h2>NEWS TIMELINE&nbsp<span class="glyphicon glyphicon-new-window"></span></h2></a>
-            </div>
-        </div>
+    @include('headerUserside')
+    <div class="container">  
+                <h1 >BCP NEWSLINK
+                <a href="/news" class="inline-text"><span class="glyphicon glyphicon-new-window"></span></a></h1>
+            <hr>
+        
     </div>
 </body>
 </html>

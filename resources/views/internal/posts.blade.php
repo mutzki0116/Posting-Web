@@ -16,7 +16,7 @@
     <form method="post" >
           <div>
             <h1 class="border-right">News Timeline <span class="border border-primary"></span>
-              <a href="newpost" class="btn btn-primary btn-lg mx-4 bg-primary">Add Another News<span class="glyphicon glyphicon-plus-sign"></a><br>
+              <a href="newpost" class="btn btn-primary btn-lg mx-4 bg-primary">Add Another News &nbsp<span class="glyphicon glyphicon-plus-sign"></a><br>
             </h1>
             <hr>
           </div>	

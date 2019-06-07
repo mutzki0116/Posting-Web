@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('test', 'Bago\index@index');
 Route::get('news', 'JobPostsController@list');
 Route::get('users','AccountsController@showList');
 Route::post('newpost', 'JobPostsController@store');
@@ -24,5 +23,8 @@ Route::get('deletejobpost/{jobpost}','JobPostsController@show2');
 Route::delete('deletejobpost/{jobpost}','JobPostsController@destroy');
 
 Route::get('/', function(){
-    return 'home';
+    return view('home');
+});
+Route::get('home', function(){
+    return view('home');
 });
