@@ -10,9 +10,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="text-center mt-4">
-        <h1>BCP @NEWSLINK</h1>
-            <a href="/news" class="inline-text"><h2>NEWS TIMELINE&nbsp<span class="glyphicon glyphicon-new-window"></span></h2></a>
+    <div class="container">
+        <div class="row"> 
+            <div class="text-center mt-4">
+                <h1>BCP @NEWSLINK</h1>
+                <a href="/news" class="inline-text"><h2>NEWS TIMELINE&nbsp<span class="glyphicon glyphicon-new-window"></span></h2></a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
