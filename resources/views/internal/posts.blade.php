@@ -45,7 +45,7 @@
               </tr>
               @endforeach
           </table>
-          <div class="col-12 text-center">
+          <div class="col-12 justify-content-center d-flex pt-2">
                 {{ $jobposts->links() }}
           </div>
       </div>
