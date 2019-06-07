@@ -11,11 +11,10 @@
 </head>
 <body>
     @include('headerUserside')
-    <div class="container">  
+    <div class="container pt-4">  
                 <h1 >BCP NEWSLINK
                 <a href="/news" class="inline-text"><span class="glyphicon glyphicon-new-window"></span></a></h1>
             <hr>
-        
     </div>
 </body>
 </html>
