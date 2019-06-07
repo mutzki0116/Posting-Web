@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/test','Bago\index@index');
-Route::get('users','AccountsController@showList');
 Route::get('news', 'JobPostsController@list');
+Route::get('users','AccountsController@showList');
 Route::post('newpost', 'JobPostsController@store');
+Route::get('userside','JobPostsController@list');
 Route::get('newpost', function(){
     return view('newpost');
 });

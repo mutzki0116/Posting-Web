@@ -11,11 +11,11 @@
 </head>
 <body>  
 @include('header')
-<div class="container pt-4">  
+<div class="container pt-4 pl-0">  
     <form method="post" >
           <div>
-            <h1 class="">New Timeline 
-              <a href="newpost" class="btn btn-primary col-sm-4 mr-0">Add Another News</a><br>
+            <h1 class="border-right">News Timeline <span class="border border-primary"></span>
+              <a href="newpost" class="btn btn-primary btn-lg mx-4 bg-secondary">Add Another News</a><br>
             </h1>
             <hr>
           </div>	
@@ -24,19 +24,23 @@
           
             <table class="table table-light table-bordered table-striped">
               <tr  class="bg-light">
-                <th><h4>News Title</h4></th>
-                <th><h4>News Description</h4></th>
-                <th><h4>News Author</h4></th>
-                <th><h4>Action</h4></th>
+                <th><h3>News Title</h3></th>
+                <th><h3>News Description</h3></th>
+                <th><h3>News Author</h3></th>
+                <th colspan="2"><h3>Action</h3></th>
               </tr>  
               @foreach($jobposts as $jobpost)
               <tr>
-                <td>{{ $jobpost->job_title }}</td>
-                <td>{{ $jobpost->job_description }}</td>
-                <td>{{ $jobpost->job_address }}</td>
+                <td><h4>{{ $jobpost->job_title }}</h4></td>
+                <td><h4>{{ $jobpost->job_description }}</h4></td>
+                <td><h4>{{ $jobpost->job_address }}</h4></td>
                 <td>
-                   <a href="editjobpost/{{ $jobpost->id }}" class="btn btn-success col-sm-5" >Edit</a>
-                   <a href="deletejobpost/{{ $jobpost->id }}" class="btn btn-danger col-sm-5" >Delete</a><br>
+                  <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <a href="editjobpost/{{ $jobpost->id }}" class="btn btn-success btn-lg col-sm-15 border border-info" >Edit</a>
+                  <a href="deletejobpost/{{ $jobpost->id }}" class="btn btn-danger btn-lg col-sm-15 border border-info" >Delete</a><br>
+                  </div>
+                   <!-- <a href="editjobpost/{{ $jobpost->id }}" class="btn btn-success col-sm-15 border border-info" >Edit</a>
+                   <a href="deletejobpost/{{ $jobpost->id }}" class="btn btn-danger col-sm-15 border border-info" >Delete</a><br> -->
                 </td>           
               </tr>
               @endforeach

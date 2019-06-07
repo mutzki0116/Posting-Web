@@ -27,7 +27,7 @@ class JobPostsController extends Controller
         // $jobpost->job_description = request('jobdesc');
         // $jobpost->job_address = request('jobadd');
         // $jobpost->save();
-        return redirect('posts');
+        return redirect('news');
     }
     public function show($jobpost){
         $jobpost = JobPost::where('id', $jobpost)->firstOrFail();
@@ -45,11 +45,11 @@ class JobPostsController extends Controller
             'job_address' => 'required',
         ]);
         $jobpost->update($data);
-        return redirect('posts');
+        return redirect('news');
     }
     public function destroy(JobPost $jobpost){
         //$jobpost = JobPost::where('id', $jobpost)->firstOrFail();
         $jobpost->delete();
-        return redirect('posts');
+        return redirect('news');
     }
 }

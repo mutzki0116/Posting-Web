@@ -6,17 +6,11 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="/users">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/users">Users</a>
+        <a class="nav-link" href="/userside">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/news">News</a>
       </li>
     </ul>
   </div>
-    <div>
-      <input type="submit" name="logout" value="Logout" class="btn btn-dark">
-    </div> 
   </nav>
