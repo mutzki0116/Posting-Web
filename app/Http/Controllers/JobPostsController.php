@@ -7,10 +7,25 @@ use Illuminate\Http\Request;
 
 class JobPostsController extends Controller
 {
+    
+    public function __construct(){
+        $this->middleware('auth');
+    }
     public function list(){
+        $jobposts = JobPost::sort()->paginate(10);
+        //ajax to panes
+        if(\Request::ajax()){
+            return JobPost::get();
+        }
+        return view('internal.posts',[
+            'jobposts' => $jobposts,
+            ]);
+        
+    }
+    public function list2(){
 
         $jobposts = JobPost::paginate(10);
-        return view('internal.posts',[
+        return view('userside',[
             'jobposts' => $jobposts,
             ]);
     }
@@ -37,6 +52,7 @@ class JobPostsController extends Controller
         $jobpost = JobPost::where('id', $jobpost)->firstOrFail();
         return view('deletejobpost', compact('jobpost'));
     }
+    
     public function update($jobpost){
         $jobpost = JobPost::where('id', $jobpost)->firstOrFail();
         $data = request()->validate([

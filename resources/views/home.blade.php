@@ -1,20 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+@extends('layouts.app')
 
-    <link rel="stylesheet" href="css/app.css">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    @include('headerUserside')
-    <div class="container pt-4">  
-                <h1 >BCP NEWSLINK
-                <a href="/news" class="inline-text"><span class="glyphicon glyphicon-new-window"></span></a></h1>
-            <hr>
+@section('content')
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Ohayo Gozaimasu!</div>
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+                        Welcome!! This website is one of our activities made on our internship.
+                </div>
+            </div>
+        </div>
     </div>
-</body>
-</html>
+       
+    
+</div>
+@endsection

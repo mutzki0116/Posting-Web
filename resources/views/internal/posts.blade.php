@@ -10,7 +10,7 @@
     <title>News Posting</title> 
 </head>
 <body>  
-@include('header')
+@include('layouts.app')
 <div class="container pt-4 pl-0">  
     <form method="post" >
           <div>

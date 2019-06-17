@@ -11,7 +11,7 @@
     <title>@yield('title')</title> 
 </head>
 <body> 
-@include('header')
+@include('layouts.app')
     <div class="container pt-4">
       <div>
         <h1>Users</h1><hr>

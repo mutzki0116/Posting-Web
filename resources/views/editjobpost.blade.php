@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-  @include('header')
+  @include('layouts.app')
     
     <div class="container pt-4 mr-2">  
       <form method="post" action="/editjobpost/{{$jobpost->id}}">

@@ -10,8 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function(){
+    return view('home');
+});
 Route::get('news', 'JobPostsController@list');
-Route::get('users','AccountsController@showList');
+Route::get('users','AccountsController@showList')->middleware('auth');
 Route::post('newpost', 'JobPostsController@store');
 Route::get('userside','JobPostsController@list');
 Route::get('newpost', function(){
@@ -22,9 +25,6 @@ Route::patch('editjobpost/{jobpost}','JobPostsController@update');
 Route::get('deletejobpost/{jobpost}','JobPostsController@show2');
 Route::delete('deletejobpost/{jobpost}','JobPostsController@destroy');
 
-Route::get('/', function(){
-    return view('home');
-});
-Route::get('home', function(){
-    return view('home');
-});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
