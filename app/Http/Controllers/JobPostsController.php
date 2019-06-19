@@ -8,9 +8,9 @@ use Illuminate\Http\Request;
 class JobPostsController extends Controller
 {
     
-    public function __construct(){
-        $this->middleware('auth');
-    }
+    // public function __construct(){
+    //     $this->middleware('auth');
+    // }
     public function list(){
         $jobposts = JobPost::sort()->paginate(10);
         //ajax to panes
