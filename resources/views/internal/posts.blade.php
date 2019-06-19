@@ -14,7 +14,7 @@
 <div class="container pt-4 pl-0">  
     <form method="post" >
           <div>
-            <h1 class="border-right">News Timeline <span class="border border-primary"></span>
+            <h1 class="border-right">News Timeline <span class="border border-danger"></span>
               <a href="newpost" class="btn btn-primary btn-lg mx-4 bg-primary">Add Another News</a><br>
             </h1>
             <hr>
