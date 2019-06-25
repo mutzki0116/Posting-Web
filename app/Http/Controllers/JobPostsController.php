@@ -12,6 +12,8 @@ class JobPostsController extends Controller
     //     $this->middleware('auth');
     // }
     public function list(){
+
+        $this->middleware('cors');
         $jobposts = JobPost::sort()->paginate(10);
         //ajax to panes
         if(\Request::ajax()){
