@@ -13,7 +13,6 @@ class JobPostsController extends Controller
     // }
     public function list(){
 
-        $this->middleware('cors');
         $jobposts = JobPost::sort()->paginate(10);
         //ajax to panes
         if(\Request::ajax()){
@@ -24,6 +23,7 @@ class JobPostsController extends Controller
             ]);
         
     }
+
     public function list2(){
 
         $jobposts = JobPost::paginate(10);
