@@ -13,7 +13,7 @@
 Route::get('/', function(){
     return view('home');
 });
-Route::get('news', 'JobPostsController@list');
+Route::middleware('cors')->get('news', 'JobPostsController@list');
 Route::get('users','AccountsController@showList')->middleware('auth');
 Route::post('newpost', 'JobPostsController@store');
 Route::get('userside','JobPostsController@list');
